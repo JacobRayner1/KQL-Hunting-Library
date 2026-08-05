@@ -15,7 +15,7 @@ Table:
 
 ```kusto
 DeviceTvmSoftwareVulnerabilities
-| where CveId == "CVE-2025-47981" //Change "CVE-2025-24076" to CVE you want to investigate
+| where CveId == "CVE-2025-24076" //Change "CVE-2025-24076" to CVE you want to investigate
 | join kind=inner (DeviceTvmInfoGathering | project LastSeenTime, DeviceName) on DeviceName
 | project DeviceName, SoftwareName, LastSeenTime, SoftwareVersion, RecommendedSecurityUpdateId
 | project-rename
