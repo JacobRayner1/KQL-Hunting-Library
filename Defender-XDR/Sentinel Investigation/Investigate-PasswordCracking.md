@@ -21,7 +21,7 @@ T1059.001 - PowerShell
 union SigninLogs, AADNonInteractiveUserSignInLogs
 | where TimeGenerated > ago(50d)
 | where ResultType in ("50126", "50053" , "50055", "50056")
-| where UserPrincipalName contains "wes.trotter"
+| where UserPrincipalName == "user@domain.com"
 | where Location !contains "AU"
 | summarize count() by ResultSignature
 ```
