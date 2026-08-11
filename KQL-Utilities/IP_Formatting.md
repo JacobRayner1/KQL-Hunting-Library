@@ -12,3 +12,4 @@ This can be used when looking to gather and format IP information from a default
 
 ## Comments
 
+This will output the IPs in your original query into a "IP1", "IP2" format. 
