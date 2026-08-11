@@ -1,0 +1,26 @@
+Summarise sign-in attempts
+
+Description
+This script can be used when investigating brute force activity from known malicious IPs to confirm if any attempts have been successful. This can be combined with Covert_IPs_to_query_ready_string 
+
+Data Source
+Microsoft Defender XDR
+
+Table: OfficeActivity, SignInLogs, AADNonInteractiveSigninLogs
+
+MITRE ATT&CK
+T1110.001 - Password Guessing
+
+Query
+let MaliciousIPs = dynamic([
+"8.8.8.8", "4.4.4.4"
+]);
+union SigninLogs, AADNonInteractiveSigninLogs
+| where IPAddress in (MaliciousIPs)
+| where TimeGenerated > ago(30d)
+| where ResultSignature == "SUCCESS" or ResultSignature == "FAILURE"
+| summarize count() by ResultSignature, UserPrincipalName
+| sort by count_ desc
+
+Comments
+This script can also be used when gathering IP addresses from other tables, such as ClientIP from the OfficeActivity table.
