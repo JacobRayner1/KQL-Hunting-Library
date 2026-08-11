@@ -2,11 +2,7 @@
 
 ## Description
 
-This script can be used when investigating brute force activity from known malicious IPs to confirm if any attempts have been successful. This can be combined with Covert_IPs_to_query_ready_string 
-
-## Data Source
-
-Microsoft Defender XDR
+This script can be used when investigating brute force activity from known malicious IPs to confirm if any attempts have been successful. This can be combined with [Convert IPs to Query Ready String](https://github.com/JacobRayner1/KQL-Hunting-Library/blob/main/KQL-Utilities/Covert_IPs_to_query_ready_string.md) 
 
 Table: 
 `OfficeActivity, SignInLogs, AADNonInteractiveSigninLogs`
