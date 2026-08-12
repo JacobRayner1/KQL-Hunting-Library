@@ -1,5 +1,17 @@
-kusto```
+# Find Devices based on the MDATP Device ID
+
+## Description
+
+This can be used when looking to match a device name to a device MDATP Device ID
+
+## Query
+
+```kusto
 DeviceInfo
-| where DeviceId == "0040592c9c83b7f7ac2561c70116ed22e0d66b47"
+| where DeviceId == "MDATPDeviceID"
 | project DeviceName
 ```
+
+## Comments
+
+ 
