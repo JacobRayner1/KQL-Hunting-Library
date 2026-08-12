@@ -2,7 +2,7 @@
 
 ## Description
 
-This script can be used when looking to extract entity information from default system alerts. This can be particularly useful when investigating Multi-stage incidents where entity information is nested in the alert output
+This script can be used when looking to extract command line entity information from default system alerts. This can be particularly useful when investigating Multi-stage incidents where entity information is nested in the alert output
 
 Table: 
 `SecurityAlert`
@@ -28,4 +28,5 @@ SecurityAlert
 ```
 
 ## Comments
+
 
