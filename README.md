@@ -11,20 +11,14 @@ The purpose of this repository is to document useful hunting queries, improve de
 
 - Microsoft Defender XDR
 - Microsoft Sentinel
-- Microsoft Entra ID
-- Defender for Endpoint
-- Defender for Office 365
-- Exchange Online
-- SharePoint
-- PowerShell
-- Identity
-- Miscellaneous
+- KQL-Utilities
+- Vulnerability Management
 
 ---
 
 ## Query Format
 
-Each query includes:
+Queries includes:
 
 - Description
 - MITRE ATT&CK mapping (where applicable)
