@@ -1,7 +1,7 @@
 # KQL-Hunting-Library
 KQL queries for Microsoft Defender XDR and Microsoft Sentinel. 
 
-Queries I've written and used while working in Microsoft Defender XDR and Microsoft Sentinel. This is a growing list that is being built upon on the back of real world learned experiences.
+These queries have been written and used while working with Microsoft security technologies in security operations and engineering environments. The repository is continuously expanded based on real-world investigation, threat hunting, detection engineering, and incident response experience.
 
 The purpose of this repository is to document useful hunting queries, improve detection engineering skills, and provide practical examples for incident response and security investigations.
 
