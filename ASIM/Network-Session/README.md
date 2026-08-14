@@ -1,12 +1,17 @@
 # ASIM Network Session Investigation
 
+## Description 
+
+These are investigation queries that were used for analysing ASIM network session system alerts, when the alert contains no info as to what the anomaly is. As a result, an analyst is left with no info to work with beyond a TimeStamp. The purpose of this investigation flow is to:
+
+a) Reconstruct the network activity surrounding the alert  
+b) Progressively determine what caused the anomaly. In my investigation, this can often just be caused by a spike in benign traffic over 443 due to Microsoft updates etc.
+
 ## Use Case
 
 Investigation workflow for Sentinel's:
 
 "Anomaly found in Network Session Traffic (ASIM Network Session schema)"
-
-Use when the alert provides limited or no useful entity information.
 
 ## Pertinent documentation
 [The Advanced Security Information Model (ASIM) Alert Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/normalization-schema-network)
@@ -14,6 +19,7 @@ Use when the alert provides limited or no useful entity information.
 [Normalization and the Advanced Security Information Model](https://learn.microsoft.com/en-us/azure/sentinel/normalization)
 
 [Network session security content](https://learn.microsoft.com/en-us/azure/sentinel/normalization-content#network-session-security-content)
+
 ## Investigation Flow
 
 1. Establish network volume
