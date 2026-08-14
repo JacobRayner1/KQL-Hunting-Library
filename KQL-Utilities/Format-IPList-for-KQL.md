@@ -2,7 +2,7 @@
 
 ## Description
 
-This can be used when looking to gather and format IP information from a default query into KQL ready output that can be used in dynamic arrays for investigation, much like [Convert IPs to KQL Ready String](https://github.com/JacobRayner1/KQL-Hunting-Library/blob/main/KQL-Utilities/Covert_IPs_to_query_ready_string.md). 
+This can be used when looking to gather and format IP information from a default query into KQL ready output that can be used in dynamic arrays for investigation, much like [Convert IPs to KQL Ready String](https://github.com/JacobRayner1/KQL-Hunting-Library/blob/main/KQL-Utilities/Summarise_IPs_to_query_ready_string.md). 
 However, this can be used when working with an existing IP list that needs to be formatted for KQL investigation use. Use cases include exporting IP lists to csvs for IOC investigation, app transaction history investigation etc.
 
 ## Query
