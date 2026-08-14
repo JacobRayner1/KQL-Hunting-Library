@@ -21,6 +21,4 @@ print IPList =
 | mv-expand IPList
 | extend IPList = strcat('"', trim(" ", tostring(IPList)), '"')
 | summarize IPList = strcat_array(make_list(IPList), ", ")
-]);
-print strcat_array(IPList, '", "')
 ```
