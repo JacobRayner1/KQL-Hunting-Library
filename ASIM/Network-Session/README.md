@@ -8,6 +8,10 @@ Investigation workflow for Sentinel's:
 
 Use when the alert provides limited or no useful entity information.
 
+## Pertinent documentation
+[The Advanced Security Information Model (ASIM) Alert Schema Reference](https://learn.microsoft.com/en-us/azure/sentinel/normalization-schema-network)
+[Normalization and the Advanced Security Information Model](https://learn.microsoft.com/en-us/azure/sentinel/normalization)
+[Network session security content](https://learn.microsoft.com/en-us/azure/sentinel/normalization-content#network-session-security-content)
 ## Investigation Flow
 
 1. Establish network volume
