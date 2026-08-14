@@ -12,4 +12,15 @@ This can be used when looking to gather and format IP information from a default
 
 ## Comments
 
-This will output the IPs in your original query into a "IP1", "IP2" format. 
+This will output the IPs in your original query into a "IP1", "IP2" format. If this query if being built without use of a table, the below can be ran using a ready IP list instead:
+
+```kusto
+print IPList = 
+"8.8.8.8, 4.4.4.4, 1.1.1.1, 8.8.4.4"
+| extend IPList = split(IPList, ",")
+| mv-expand IPList
+| extend IPList = strcat('"', trim(" ", tostring(IPList)), '"')
+| summarize IPList = strcat_array(make_list(IPList), ", ")
+]);
+print strcat_array(IPList, '", "')
+```
